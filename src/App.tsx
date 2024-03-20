@@ -5,11 +5,14 @@ import Context from './components/Context';
 
 function App() {
   return (
-    <div className="App">
-      {/* Pass initialCount prop to the Counter component */}
-      <Counter initialCount={5} />
-      {/* Pass defaultLocation prop to the Context component */}
-      <Context defaultLocation="London" />
+    <div className="app-container">
+      <header className="app-header">
+        <h1>Counter</h1>
+      </header>
+      <main className="app-main">
+        <Counter initialCount={5} />
+        <Context defaultLocation="Tallinn" />
+      </main>
     </div>
   );
 }
